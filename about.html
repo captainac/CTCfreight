@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - CTC Freight Carriers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#E31837",
+              secondary: "#FF4D4D",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50 w-full">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="flex justify-between h-16">
+          <a href="/" class="flex items-center">
+            <img
+              src="https://static.readdy.ai/image/6b80ffb81fdb50e12a623c45e1759f9a/a2a7e4aaa7f88837f3146487bf3d30e7.jpeg"
+              alt="CTC Freight Carriers Logo"
+              class="h-8"
+            />
+          </a>
+          <div class="hidden md:flex items-center justify-center flex-1">
+            <div class="flex items-center space-x-8">
+              <a
+                href="index.html"
+                class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="services.html"
+                class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium"
+                >Services</a
+              >
+              <a
+                href="about.html"
+                class="text-primary border-b-2 border-primary px-3 py-2 text-sm font-medium"
+                >About Us</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center">
+            <button
+              class="hidden md:block bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-primary/90 whitespace-nowrap cursor-pointer"
+            >
+              <a href="contact.html">Contact Us</a>
+            </button>
+            <button
+              class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700"
+              id="mobile-menu-button"
+            >
+              <i class="ri-menu-line text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="mobile-menu hidden md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg z-40"
+      id="mobile-menu"
+    >
+      <div class="px-4 py-2 space-y-1">
+        <a
+          href="index.html"
+          class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50"
+          >Home</a
+        >
+        <a
+          href="services.html"
+          class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50"
+          >Services</a
+        >
+        <a
+          href="about.html"
+          class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50"
+          >About Us</a
+        >
+        <button
+          class="w-full mt-4 bg-primary text-white px-6 py-2 !rounded-button font-medium hover:bg-primary/90 whitespace-nowrap cursor-pointer"
+        >
+          <a href="contact.html">Contact Us</a>
+        </button>
+      </div>
+    </div>
+
+    <main class="w-full">
+      <!-- Hero Section -->
+      <section class="relative pt-16 overflow-hidden h-[60vh]">
+        <div
+          class="absolute inset-0 bg-cover bg-center"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+          "
+        >
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"
+          ></div>
+          <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(0,0,0,0.8)_0%,rgba(0,0,0,0)_60%)]"
+          ></div>
+        </div>
+        <div
+          class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center h-full"
+        >
+          <div class="max-w-3xl">
+            <h1
+              class="text-4xl md:text-5xl font-bold text-white mb-6 [text-shadow:_0_1px_2px_rgb(0_0_0_/_20%)]"
+            >
+              About CTC Freight Carriers
+            </h1>
+            <p
+              class="text-xl text-white/90 mb-8 [text-shadow:_0_1px_2px_rgb(0_0_0_/_20%)]"
+            >
+              Leading the way in innovative logistics solutions since 2002
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Story Section -->
+      <section class="py-20 bg-white w-full">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+              <p class="text-gray-600 mb-6">
+                Founded in 2002, CTC Freight Carriers has grown from a small
+                regional player to one of India's leading logistics providers.
+                Our journey has been marked by continuous innovation, unwavering
+                commitment to quality, and a deep understanding of our
+                customers' needs.
+              </p>
+              <p class="text-gray-600 mb-6">
+                Today, we operate a modern fleet of over 500 vehicles, serving
+                businesses across 28 states in India. Our temperature-controlled
+                solutions and specialized services have made us a preferred
+                partner for industries ranging from pharmaceuticals to fresh
+                produce.
+              </p>
+              <div class="grid grid-cols-2 gap-8 mt-8">
+                <div>
+                  <div class="text-4xl font-bold text-primary mb-2">20+</div>
+                  <div class="text-gray-600">Years of Excellence</div>
+                </div>
+                <div>
+                  <div class="text-4xl font-bold text-primary mb-2">500+</div>
+                  <div class="text-gray-600">Modern Vehicles</div>
+                </div>
+                <div>
+                  <div class="text-4xl font-bold text-primary mb-2">28</div>
+                  <div class="text-gray-600">States Covered</div>
+                </div>
+                <div>
+                  <div class="text-4xl font-bold text-primary mb-2">5000+</div>
+                  <div class="text-gray-600">Happy Clients</div>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="CTC Freight History"
+                class="rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Founder Section -->
+      <section class="py-20 bg-gray-50 w-full">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+              <img
+                src="https://static.readdy.ai/image/6b80ffb81fdb50e12a623c45e1759f9a/founder.jpg"
+                alt="Mr. Arun Goyal - Founder"
+                class="rounded-lg shadow-lg"
+              />
+              <div
+                class="absolute -bottom-4 -right-4 bg-primary text-white px-6 py-2 rounded-lg shadow-lg"
+              >
+                <p class="font-semibold">Mr. Arun Goyal</p>
+                <p class="text-sm text-white/90">Founder & Managing Director</p>
+              </div>
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                Message from Our Founder
+              </h2>
+              <div class="prose prose-lg text-gray-600">
+                <p class="mb-4">
+                  Transportation of goods from manufacturing unit to retailers
+                  or from suppliers to retailers is an area of concern for all
+                  businesses. Established in the year 2002, at Navi Mumbai,
+                  Maharashtra, India, we "C. T. C. Freight Carriers India
+                  Private Limited," have emerged as one of the leading solution
+                  providers in the field of Freight Transportation.
+                </p>
+
+                <p class="mb-4">
+                  Our business operations are led by Mr. Arun Goyal, who brings
+                  extensive experience in this industry sector. His dedicated
+                  business approach and the support of experienced industry
+                  professionals ensures prompt delivery of goods in safe
+                  conditions as per defined time guidelines.
+                </p>
+
+                <p class="mb-4">
+                  The support provided by our specialized fleet of trailers,
+                  trucks, and LCV's ensures safe handling of project
+                  transportation and ODC consignment. Our well-connected network
+                  of associates and branches across India enables us to
+                  successfully handle complete logistic service needs of our
+                  customers.
+                </p>
+
+                <p class="mb-4">
+                  The high level of services delivered can be seen from the
+                  appreciation and repeat orders we receive from our clients.
+                  Furthermore, our competitive pricing adds to the contentment
+                  of our clients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission & Vision Section -->
+      <section class="py-20 bg-gray-50 w-full">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full mb-6"
+              >
+                <i class="ri-focus-3-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+              <p class="text-gray-600">
+                To provide innovative and reliable logistics solutions that
+                empower businesses to thrive in an increasingly connected world.
+                We strive to exceed customer expectations through operational
+                excellence, technological advancement, and sustainable
+                practices.
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full mb-6"
+              >
+                <i class="ri-eye-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+              <p class="text-gray-600">
+                To be India's most trusted and innovative logistics partner,
+                setting new standards in service quality, technological
+                integration, and environmental responsibility while contributing
+                to the nation's economic growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Values Section -->
+      <section class="py-20 bg-white w-full">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Our Core Values
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-6 bg-gray-50 rounded-lg">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full mb-4"
+              >
+                <i class="ri-shield-check-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Safety First
+              </h3>
+              <p class="text-gray-600">
+                Maintaining the highest standards of safety in all our
+                operations, protecting our people, cargo, and environment.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-50 rounded-lg">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full mb-4"
+              >
+                <i class="ri-customer-service-2-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Customer Focus
+              </h3>
+              <p class="text-gray-600">
+                Understanding and anticipating our customers' needs to deliver
+                exceptional service and solutions.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-50 rounded-lg">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary/5 rounded-full mb-4"
+              >
+                <i class="ri-recycle-line text-primary text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">
+                Sustainability
+              </h3>
+              <p class="text-gray-600">
+                Committed to environmentally responsible practices and reducing
+                our carbon footprint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership Team Section -->
+      <section class="py-20 bg-gray-50 w-full">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+            Our Leadership Team
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="CEO"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-1">
+                  Rajesh Kumar
+                </h3>
+                <p class="text-gray-600 mb-4">Chief Executive Officer</p>
+                <p class="text-gray-600 text-sm">
+                  Over 25 years of experience in logistics and supply chain
+                  management.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1976&q=80"
+                alt="COO"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-1">
+                  Priya Sharma
+                </h3>
+                <p class="text-gray-600 mb-4">Chief Operations Officer</p>
+                <p class="text-gray-600 text-sm">
+                  Expertise in optimizing complex logistics operations and
+                  implementing innovative solutions.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="CTO"
+                class="w-full h-64 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-1">
+                  Amit Patel
+                </h3>
+                <p class="text-gray-600 mb-4">Chief Technology Officer</p>
+                <p class="text-gray-600 text-sm">
+                  Leading digital transformation and technological innovation in
+                  logistics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-20 bg-primary w-full">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Join Our Journey</h2>
+            <p class="text-xl text-white/90 mb-8">
+              Partner with us to experience logistics excellence
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+              <button
+                class="bg-white text-primary px-8 py-3 !rounded-button font-semibold hover:bg-gray-50 whitespace-nowrap cursor-pointer shadow-lg hover:shadow-xl transition-shadow"
+              >
+                Contact Us Today
+              </button>
+              <button
+                class="bg-transparent border-2 border-white text-white px-8 py-3 !rounded-button font-semibold hover:bg-white/10 whitespace-nowrap cursor-pointer shadow-lg hover:shadow-xl transition-shadow"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 w-full">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <a href="/" class="mb-4 block">
+              <img
+                src="https://static.readdy.ai/image/6b80ffb81fdb50e12a623c45e1759f9a/a2a7e4aaa7f88837f3146487bf3d30e7.jpeg"
+                alt="CTC Freight Carriers Logo"
+                class="h-8"
+              />
+            </a>
+            <p class="text-gray-400">
+              Your trusted partner in logistics since 2002
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="about.html" class="text-gray-400 hover:text-white"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="text-gray-400 hover:text-white"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-gray-400 hover:text-white"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Freight Transportation</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Refrigerated Transport</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Warehousing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Custom Clearance</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-twitter-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400">
+            © 2025 CTC Freight Carriers. All rights reserved.
+          </p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="text-gray-400 hover:text-white"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="fixed bottom-8 right-8 flex flex-col space-y-4">
+      <button
+        class="w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center hover:bg-primary/90"
+      >
+        <i class="ri-whatsapp-line text-xl"></i>
+      </button>
+      <button
+        class="w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center hover:bg-primary/90"
+      >
+        <i class="ri-phone-line text-xl"></i>
+      </button>
+    </div>
+
+    <script>
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
